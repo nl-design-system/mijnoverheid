@@ -51,7 +51,7 @@
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "ts-dedent": "^2.1.1",
-    "webpack": "^4.46.0"
+    "webpack": "^5.44.0"
   },
   "scripts": {
     "build": "build-storybook --output-dir dist/ --static-dir ./documentation/",
