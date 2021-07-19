@@ -1,0 +1,94 @@
+.lo-tab-list {
+  margin-bottom: 0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 10px 16px 0 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 0;
+  list-style: none;
+}
+
+.lo-tab-list li {
+  padding-left: 0;
+}
+.lo-tab-list li::before {
+  padding-right: 0;
+  content: '';
+}
+
+.lo-tab-list__item {
+  display: inline-block;
+}
+
+.lo-tab-list__link {
+  display: block;
+  position: relative;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  cursor: pointer;
+  padding: 11px 12px;
+  text-decoration: none;
+  color: #282828;
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.lo-tab-list__link--active {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.lo-tab-list__link:hover {
+  background-color: #f3f3f3;
+}
+.lo-tab-list__link:hover .lo-tab-list__text {
+  transform: translateY(-2px);
+}
+
+.lo-tab-list__link:active {
+  background-color: #e6e6e6;
+}
+.lo-tab-list__link:active .lo-tab-list__text {
+  transform: translateY(0);
+}
+
+.lo-tab-list__text {
+  display: inline-block;
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.lo-tab-list__link--active,
+.lo-tab-list__link:hover {
+  text-decoration: none;
+  color: #282828;
+}
+
+.lo-tab-list__link--active::after {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-color: #007bc7;
+  height: 4px;
+  content: '';
+}
+
+.sr-only {
+  position: absolute;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
