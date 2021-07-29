@@ -5,5 +5,7 @@
   "license": "EUPL-1.2",
   "name": "@mijnoverheid/components",
   "private": true,
-  "devDependencies": {}
+  "devDependencies": {
+    "clsx": "1.1.1"
+  }
 }
