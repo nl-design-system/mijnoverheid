@@ -37,12 +37,14 @@
 
   /* Tab label current */
   --mijnoverheid-tab-label-current-font-weight: var(--mijnoverheid-font-weight-bold);
-
+  --mijnoverheid-tab-label-current-indicator-hover-background-color: var(--mijnoverheid-font-weight-bold);
+  --mijnoverheid-tab-label-current-indicator-active-background-color: var(--mijnoverheid-font-weight-bold);
+  --mijnoverheid-tab-label-current-indicator-focus-background-color: var(--mijnoverheid-font-weight-bold);
   --mijnoverheid-tab-label-current-indicator-background-color: var(--mijnoverheid-color-brand-primary);
   --mijnoverheid-tab-label-current-indicator-border-radius-top-left: 2px;
   --mijnoverheid-tab-label-current-indicator-border-radius-top-right: 2px;
-  --mijnoverheid-tab-label-current-indicator-border-radius-border-left: 0;
-  --mijnoverheid-tab-label-current-indicator-border-radius-border-right: 0;
+  --mijnoverheid-tab-label-current-indicator-border-radius-bottom-left: 0;
+  --mijnoverheid-tab-label-current-indicator-border-radius-bottom-right: 0;
   --mijnoverheid-tab-label-current-indicator-height: 4px;
 
   /*--mijnoverheid-tab-current-background-color*/

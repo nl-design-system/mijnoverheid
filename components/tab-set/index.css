@@ -91,37 +91,44 @@
   content: '';
 
   /* Theme styles */
-  height: 4px;
+  height: var(--mijnoverheid-tab-label-current-indicator-height);
   background-color: var(--mijnoverheid-color-brand-primary);
-  border-top-left-radius: var(--mijnoverheid-tab-label-border-radius-top-left);
-  border-top-right-radius: var(--mijnoverheid-tab-label-border-radius-top-right);
-  border-bottom-left-radius: var(--mijnoverheid-tab-label-border-radius-bottom-left);
-  border-bottom-right-radius: var(--mijnoverheid-tab-label-border-radius-bottom-right);
-  /*hover: #007bc7; // Moet donkerder*/
-  /*active: #007bc7; // Moet donkerder*/
+  border-top-left-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-top-left);
+  border-top-right-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-top-right);
+  border-bottom-left-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-bottom-left);
+  border-bottom-right-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-bottom-right);
 }
-.tab-label.tab-label--current:hover::after,
+.tab-label--current:hover::after,
 .tab-label--current.tab-label--hover::after {
-  background-color: var(--mijnoverheid-color-brand-primary);
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-label-current-indicator-hover-background-color);
 }
-.tab-label.tab-label--current:active::after,
+.tab-label--current:active::after,
 .tab-label--current.tab-label--active::after {
-  background-color: var(--mijnoverheid-color-brand-primary);
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-label-current-indicator-active-background-color);
+}
+.tab-label--current:focus::after,
+.tab-label--current.tab-label--focus::after {
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-label-current-indicator-focus-background-color);
 }
 
 .tab-label:hover,
 .tab-label--hover {
-  background-color: var(--mijnoverheid-tab-label-hover-background-color);
   cursor: pointer;
-}
 
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-label-hover-background-color);
+}
 .tab-label:focus,
 .tab-label--focus {
+  /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-focus-background-color);
 }
-
 .tab-label:active,
 .tab-label--active {
+  /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-active-background-color);
 }
 
@@ -134,5 +141,18 @@
 .tab-label--disabled:focus,
 .tab-label[disabled]:focus {
   cursor: default;
+
+  /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-background-color);
+}
+.tab-label--disabled::after,
+.tab-label[disabled]::after,
+.tab-label--disabled:hover::after,
+.tab-label[disabled]:hover::after,
+.tab-label--disabled:active::after,
+.tab-label[disabled]:active::after,
+.tab-label--disabled:focus::after,
+.tab-label[disabled]:focus::after {
+  /* Theme styles */
+  background-color: var(--mijnoverheid-color-dove-gray);
 }
