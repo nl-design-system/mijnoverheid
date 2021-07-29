@@ -1,27 +1,33 @@
-@import '../../proprietary/logius-design-tokens/brand/mijnoverheid/index.css';
+@import "../../proprietary/logius-design-tokens/brand/mijnoverheid/index.css";
 
 /* Demo styles */
 @font-face {
-  font-family: 'RoSans';
+  font-family: "RoSans";
   font-display: swap;
-  src: url('./fonts/ROsanswebtextregular.eot') format('eot'), url('./fonts/ROsanswebtextregular.woff') format('woff'),
-  url('#{$font-path}.ttf') format('truetype');
+  src: url("./fonts/ROsanswebtextregular.eot") format("eot"), url("./fonts/ROsanswebtextregular.woff") format("woff"),
+    url("#{$font-path}.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 .demo-table {
-  font-family: 'RoSans', sans-serif;
+  font-family: "RoSans", sans-serif;
 }
+
+.demo-table td {
+  padding-inline-start: 8px;
+  padding-inline-end: 8px;
+  padding-block-start: 8px;
+  padding-block-end: 8px;
+  vertical-align: top;
+}
+
 .demo-table th,
 .demo-table td:first-of-type {
   font-style: italic;
   font-weight: 400;
 }
-.demo-table td {
-  padding: 8px;
-  vertical-align: top;
-}
+
 /* End of demo styles */
 
 .mijnoverheid-tab-set {
@@ -38,12 +44,12 @@
   border-style: var(--mijnoverheid-tab-list-border-style);
   border-width: var(--mijnoverheid-tab-list-border-width);
   box-shadow: var(--mijnoverheid-tab-list-box-shadow);
-  margin-top: var(--mijnoverheid-tab-list-margin-block-start);
-  margin-bottom: var(--mijnoverheid-tab-list-margin-block-end);
-  padding-top: var(--mijnoverheid-tab-list-padding-block-start);
-  padding-bottom: var(--mijnoverheid-tab-list-padding-block-end);
-  padding-left: var(--mijnoverheid-tab-list-padding-inline-start);
-  padding-right: var(--mijnoverheid-tab-list-padding-inline-end);
+  margin-block-start: var(--mijnoverheid-tab-list-margin-block-start);
+  margin-block-end: var(--mijnoverheid-tab-list-margin-block-end);
+  padding-block-start: var(--mijnoverheid-tab-list-padding-block-start);
+  padding-block-end: var(--mijnoverheid-tab-list-padding-block-end);
+  padding-inline-start: var(--mijnoverheid-tab-list-padding-inline-start);
+  padding-inline-end: var(--mijnoverheid-tab-list-padding-inline-end);
 }
 
 .mijnoverheid-tab-label {
@@ -59,10 +65,10 @@
   font-size: var(--mijnoverheid-tab-label-font-size);
   font-weight: var(--mijnoverheid-tab-label-font-weight);
   line-height: var(--mijnoverheid-tab-label-line-height);
-  padding-top: var(--mijnoverheid-tab-label-padding-block-start);
-  padding-bottom: var(--mijnoverheid-tab-label-padding-block-end);
-  padding-left: var(--mijnoverheid-tab-label-padding-inline-start);
-  padding-right: var(--mijnoverheid-tab-label-padding-inline-end);
+  padding-block-start: var(--mijnoverheid-tab-label-padding-block-start);
+  padding-block-end: var(--mijnoverheid-tab-label-padding-block-end);
+  padding-inline-start: var(--mijnoverheid-tab-label-padding-inline-start);
+  padding-inline-end: var(--mijnoverheid-tab-label-padding-inline-end);
   border-top-left-radius: var(--mijnoverheid-tab-label-border-radius-top-left);
   border-top-right-radius: var(--mijnoverheid-tab-label-border-radius-top-right);
   border-bottom-left-radius: var(--mijnoverheid-tab-label-border-radius-bottom-left);
@@ -71,7 +77,10 @@
 
 .mijnoverheid-tab-label--mobile {
   /* Theme styles */
-  padding: 12px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  padding-block-start: 12px;
+  padding-block-end: 12px;
 }
 
 .mijnoverheid-tab-label--current {
