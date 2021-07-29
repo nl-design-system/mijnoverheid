@@ -1,0 +1,16 @@
+:root {
+  --mijnoverheid-body-font-size: 16px;
+  --mijnoverheid-body-font-style: normal;
+  --mijnoverheid-body-font-weight: 400;
+  --mijnoverheid-body-line-height: 24px;
+
+  --mijnoverheid-lead-font-size: 18px;
+  --mijnoverheid-lead-font-style: normal;
+  --mijnoverheid-lead-font-weight: 400;
+  --mijnoverheid-lead-line-height: 26px;
+
+  --mijnoverheid-subtext-font-size: 14px;
+  --mijnoverheid-subtext-font-style: normal;
+  --mijnoverheid-subtext-font-weight: 400;
+  --mijnoverheid-subtext-line-height: 20px;
+}

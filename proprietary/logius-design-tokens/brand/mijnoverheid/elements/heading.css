@@ -1,0 +1,27 @@
+:root {
+  --mijnoverheid-heading-1-font-size: 32px;
+  --mijnoverheid-heading-1-font-style: normal;
+  --mijnoverheid-heading-1-font-weight: 400;
+  --mijnoverheid-heading-1-line-height: 40px;
+
+  --mijnoverheid-heading-2-font-size: 24px;
+  --mijnoverheid-heading-2-font-size-responsive: 20px;
+  --mijnoverheid-heading-2-font-style: normal;
+  --mijnoverheid-heading-2-font-weight: 400;
+  --mijnoverheid-heading-2-line-height: 26px;
+
+  --mijnoverheid-heading-3-font-size: 20px;
+  --mijnoverheid-heading-3-font-style: normal;
+  --mijnoverheid-heading-3-font-weight: 400;
+  --mijnoverheid-heading-3-line-height: 24px;
+
+  --mijnoverheid-heading-4-font-size: 18px;
+  --mijnoverheid-heading-4-font-style: normal;
+  --mijnoverheid-heading-4-font-weight: 700;
+  --mijnoverheid-heading-4-line-height: 24px;
+
+  --mijnoverheid-heading-5-font-size: 16px;
+  --mijnoverheid-heading-5-font-style: normal;
+  --mijnoverheid-heading-5-font-weight: 700;
+  --mijnoverheid-heading-5-line-height: 20px;
+}

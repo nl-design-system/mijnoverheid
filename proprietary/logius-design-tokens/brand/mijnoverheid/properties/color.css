@@ -1,0 +1,40 @@
+/**
+ * @tokens Your Organisation / Color
+ * @presenter Color
+ */
+:root {
+  --mijnoverheid-color-white: #fff;
+  --mijnoverheid-color-black: #000;
+  --mijnoverheid-color-ghost: #f3f3f3;
+  --mijnoverheid-color-smoke: #e6e6e6;
+  --mijnoverheid-color-brand-primary: #007bc7;
+  --mijnoverheid-color-text: #2828282;
+
+  --mijnoverheid-color-wild-sand: #f5f5f5;
+  --mijnoverheid-color-alto: #d6d6d6;
+  --mijnoverheid-color-boulder: #767676;
+  --mijnoverheid-color-dove-gray: #696969;
+  --mijnoverheid-color-emperor: #535353;
+  --mijnoverheid-color-tundora: #444;
+
+  --mijnoverheid-color-alablaster: #fafafa;
+  --mijnoverheid-color-champagne: #fbead9;
+  --mijnoverheid-color-linen: #f9dfdd;
+
+  --mijnoverheid-color-willow-brook: #e1eddb;
+  --mijnoverheid-color-green-leaf: #39870c;
+
+  --mijnoverheid-color-link-water: #d9ebf7;
+  --mijnoverheid-color-blizzard-blue: #b2d7ee;
+  --mijnoverheid-color-denim: #0d72b0;
+  --mijnoverheid-color-bahama-blue: #01689b;
+  --mijnoverheid-color-endeavour: #004ca0;
+  --mijnoverheid-color-chathams-blue: #154273;
+
+  --mijnoverheid-color-mango-tango: #e17000;
+  --mijnoverheid-color-bamboo: #dd6200;
+  --mijnoverheid-color-grenadier: #d84f00;
+  --mijnoverheid-color-thunderbird: #d52b1e;
+
+  --mijnoverheid-color-tawny: #a95400;
+}
