@@ -22,6 +22,9 @@ export const parameters = {
   previewTabs,
   statuses,
   options: {
-    panelPosition: 'right',
+    panelPosition: 'bottom',
+    storySort: {
+      order: ['MijnOverheid', ['README']],
+    },
   },
 };
