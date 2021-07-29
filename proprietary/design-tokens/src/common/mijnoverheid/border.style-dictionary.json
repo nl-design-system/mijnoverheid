@@ -1,0 +1,10 @@
+{
+  "mijnoverheid": {
+    "border": {
+      "style": {
+        "solid": { "value":  "solid" },
+        "dashed": { "value":  "dashed" }
+      }
+    }
+  }
+}
