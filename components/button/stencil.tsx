@@ -1,7 +1,7 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'example-button',
+  tag: 'mijnoverheid-button',
   styleUrl: 'bem.scss',
   shadow: true,
 })
