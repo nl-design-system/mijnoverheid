@@ -1,0 +1,40 @@
+{
+  "mijnoverheid": {
+    "color": {
+      "white": { "value": "#fff" },
+      "black": { "value": "#000" },
+      "ghost": { "value": "#f3f3f3" },
+      "smoke": { "value": "#e6e6e6" },
+      "text": { "value": "#2828282" },
+
+      "wild-sand": { "value": "#f5f5f5" },
+      "alto": { "value": "#d6d6d6" },
+      "boulder": { "value": "#767676" },
+      "dove-gray": { "value": "#696969" },
+      "emperor": { "value": "#535353" },
+      "tundora": { "value": "#444" },
+
+      "alablaster": { "value": "#fafafa" },
+      "champagne": { "value": "#fbead9" },
+      "linen": { "value": "#f9dfdd" },
+
+      "willow-brook": { "value": "#e1eddb" },
+      "green-leaf": { "value": "#39870c" },
+
+      "link-water": { "value": "#d9ebf7" },
+      "blizzard-blue": { "value": "#b2d7ee" },
+      "brand-primary": { "value": "#007bc7" },
+      "denim": { "value": "#0d72b0" },
+      "bahama-blue": { "value": "#01689b" },
+      "endeavor": { "value": "#004ca0" },
+      "chathams-blue": { "value": "#154273" },
+
+      "mango-tango": { "value": "#e17000" },
+      "bamboo": { "value": "#dd6200" },
+      "grenadier": { "value": "#d84f00" },
+      "thunderbird": { "value": "#d52b1e" },
+
+      "tawny": { "value": "#a95400" }
+    }
+  }
+}

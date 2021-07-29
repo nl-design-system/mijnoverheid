@@ -1,0 +1,8 @@
+{
+  "mijnoverheid": {
+    "box-shadow": {
+      "md": { "value": "0 2px 4px rgba({mijnoverheid.color.black.value}), 0.24)" },
+      "lg": { "value": "0 0 6px rgba({mijnoverheid.color.black.value}), 0.16)" }
+    }
+  }
+}
