@@ -1,0 +1,112 @@
+import { Meta, Story, Canvas, ArgsTable, Description, Source } from "@storybook/addon-docs/blocks";
+import { sanitize } from "dompurify"; // Helps with preventing injections via argstable
+import { MDXEmbedProvider } from "mdx-embed";
+import dedent from "ts-dedent";
+
+
+<!-- Import component and component styles -->
+
+import "./index.css";
+
+<!-- Import Docs -->
+
+import README from "./README.md";
+import contentGuidelines from "./docs/content-guidelines.md";
+import accessibilityGuidelines from "./docs/accessibility-guidelines.md";
+
+export const Template = ({ label }) =>
+  `<div>
+      <h2>Tab labels</h2>
+      <table class="demo-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Default, desktop</th>
+            <th>Current, desktop</th>
+            <th>Default, mobile</th>
+            <th>Current, mobile</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Default</td>
+            <td><button class="tab-label" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--current" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--current" role="tab">${label}</button></td>
+          </tr>
+          <tr>
+            <td>Hover</td>
+            <td><button class="tab-label tab-label--hover" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--current tab-label--hover" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--hover" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--current  tab-label--hover" role="tab">${label}</button></td>
+          </tr>
+          <tr>
+            <td>Active</td>
+            <td><button class="tab-label tab-label--active" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--current tab-label--active" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--active" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--current tab-label--active" role="tab">${label}</button></td>
+          </tr>
+          <tr>
+            <td>Focus</td>
+            <td><button class="tab-label tab-label--focus" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--current tab-label--focus" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--focus" role="tab">${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--current tab-label--focus" role="tab">${label}</button></td>
+          </tr>
+          <tr>
+            <td>Disabled</td>
+            <td><button class="tab-label" role="tab" disabled>${label}</button></td>
+            <td><button class="tab-label tab-label--current" role="tab" disabled>${label}</button></td>
+            <td><button class="tab-label tab-label--mobile" role="tab" disabled>${label}</button></td>
+            <td><button class="tab-label tab-label--mobile tab-label--current" role="tab" disabled>${label}</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Tab list</h2>
+      <div class="tab-set">
+        <div class="tab-list" role="tablist">
+          <button class="tab-label" role="tab">${label}</button>
+          <button class="tab-label tab-label--current" role="tab" aria-selected="true">${label}</button>
+          <button class="tab-label" role="tab">${label}</button>
+          <button class="tab-label" role="tab">${label}</button>
+          <button class="tab-label tab-label--disabled" role="tab" disabled>${label}</button>
+        </div>
+      </div>
+      <div class="tabpanels">
+          <div class="tabpanel">...</div>
+      </div>
+  </div>`;
+
+<Meta
+  title="Components/TabList"
+  argTypes={{
+    label: {
+      description: "Set the content of the tab item",
+      control: "text",
+    },
+  }}
+  parameters={{
+    docs: {
+      transformSource: (_src, { args }) => Template(args),
+    },
+    status: "IN DEVELOPMENT",
+    notes: { UX: README, Content: contentGuidelines, Accessibility: accessibilityGuidelines },
+  }}
+/>
+
+<Canvas>
+  <Story name="TabList" args={{ label: "Demo tab item" }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+<ArgsTable story="TabList" />
+
+## Design Kit
+
+<MDXEmbedProvider>
+  <Figma title="TabList" url="file/8HxbveYiHkxfDmsS0OyI5r/Logius-Mijn-Overheid---Tab?node-id=103%3A73" />
+</MDXEmbedProvider>

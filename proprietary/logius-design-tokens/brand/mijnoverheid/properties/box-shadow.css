@@ -1,0 +1,4 @@
+:root {
+  --mijnoverheid-box-shadow-md: 0 2px 4px rgba(var(--mijnoverheid-color-black), 0.24);
+  --mijnoverheid-box-shadow-lg: 0 0 6px rgba(var(--mijnoverheid-color-black), 0.16);
+}

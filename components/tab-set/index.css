@@ -1,0 +1,138 @@
+@import '../../proprietary/logius-design-tokens/brand/mijnoverheid/index.css';
+
+/* Demo styles */
+@font-face {
+  font-family: 'RoSans';
+  font-display: swap;
+  src: url('./fonts/ROsanswebtextregular.eot') format('eot'), url('./fonts/ROsanswebtextregular.woff') format('woff'),
+  url('#{$font-path}.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.demo-table {
+  font-family: 'RoSans', sans-serif;
+}
+.demo-table th,
+.demo-table td:first-of-type {
+  font-style: italic;
+  font-weight: 400;
+}
+.demo-table td {
+  padding: 8px;
+  vertical-align: top;
+}
+/* End of demo styles */
+
+
+
+
+.tab-set {
+  overflow: hidden;
+}
+
+.tab-list {
+  font-size: 0;
+  overflow-x: auto;
+
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-list-background-color);
+  border-color: var(--mijnoverheid-tab-list-border-color);
+  border-style: var(--mijnoverheid-tab-list-border-style);
+  border-width: var(--mijnoverheid-tab-list-border-width);
+  box-shadow: var(--mijnoverheid-tab-list-box-shadow);
+  margin-top: var(--mijnoverheid-tab-list-margin-block-start);
+  margin-bottom: var(--mijnoverheid-tab-list-margin-block-end);
+  padding-top: var(--mijnoverheid-tab-list-padding-block-start);
+  padding-bottom: var(--mijnoverheid-tab-list-padding-block-end);
+  padding-left: var(--mijnoverheid-tab-list-padding-inline-start);
+  padding-right: var(--mijnoverheid-tab-list-padding-inline-end);
+}
+
+.tab-label {
+  display: inline-block;
+  position: relative;
+  border-width: 0;
+  white-space: nowrap;
+
+  /* Theme styles */
+  background-color: var(--mijnoverheid-tab-label-background-color);
+  color: var(--mijnoverheid-tab-label-color);
+  font-family: var(--mijnoverheid-tab-label-font-family);
+  font-size: var(--mijnoverheid-tab-label-font-size);
+  font-weight: var(--mijnoverheid-tab-label-font-weight);
+  line-height: var(--mijnoverheid-tab-label-line-height);
+  padding-top: var(--mijnoverheid-tab-label-padding-block-start);
+  padding-bottom: var(--mijnoverheid-tab-label-padding-block-end);
+  padding-left: var(--mijnoverheid-tab-label-padding-inline-start);
+  padding-right: var(--mijnoverheid-tab-label-padding-inline-end);
+  border-top-left-radius: var(--mijnoverheid-tab-label-border-radius-top-left);
+  border-top-right-radius: var(--mijnoverheid-tab-label-border-radius-top-right);
+  border-bottom-left-radius: var(--mijnoverheid-tab-label-border-radius-bottom-left);
+  border-bottom-right-radius: var(--mijnoverheid-tab-label-border-radius-bottom-right);
+}
+
+.tab-label--mobile {
+  /* Theme styles */
+  padding: 12px;
+}
+
+.tab-label--current {
+  /* Theme styles */
+  font-weight: var(--mijnoverheid-tab-label-current-font-weight);
+}
+
+/* Balk neemt ruimte in (4px) ipv ruimte toevoegen */
+.tab-label--current::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+
+  /* Theme styles */
+  height: 4px;
+  background-color: var(--mijnoverheid-color-brand-primary);
+  border-top-left-radius: var(--mijnoverheid-tab-label-border-radius-top-left);
+  border-top-right-radius: var(--mijnoverheid-tab-label-border-radius-top-right);
+  border-bottom-left-radius: var(--mijnoverheid-tab-label-border-radius-bottom-left);
+  border-bottom-right-radius: var(--mijnoverheid-tab-label-border-radius-bottom-right);
+  /*hover: #007bc7; // Moet donkerder*/
+  /*active: #007bc7; // Moet donkerder*/
+}
+.tab-label.tab-label--current:hover::after,
+.tab-label--current.tab-label--hover::after {
+  background-color: var(--mijnoverheid-color-brand-primary);
+}
+.tab-label.tab-label--current:active::after,
+.tab-label--current.tab-label--active::after {
+  background-color: var(--mijnoverheid-color-brand-primary);
+}
+
+.tab-label:hover,
+.tab-label--hover {
+  background-color: var(--mijnoverheid-tab-label-hover-background-color);
+  cursor: pointer;
+}
+
+.tab-label:focus,
+.tab-label--focus {
+  background-color: var(--mijnoverheid-tab-label-focus-background-color);
+}
+
+.tab-label:active,
+.tab-label--active {
+  background-color: var(--mijnoverheid-tab-label-active-background-color);
+}
+
+.tab-label--disabled,
+.tab-label[disabled],
+.tab-label--disabled:hover,
+.tab-label[disabled]:hover,
+.tab-label--disabled:active,
+.tab-label[disabled]:active,
+.tab-label--disabled:focus,
+.tab-label[disabled]:focus {
+  cursor: default;
+  background-color: var(--mijnoverheid-tab-label-background-color);
+}

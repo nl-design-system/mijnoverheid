@@ -1,0 +1,75 @@
+:root {
+  /* Tab set */
+
+  /* Tab list */
+  --mijnoverheid-tab-list-background-color: var(--mijnoverheid-color-white);
+  --mijnoverheid-tab-list-border-color: var(--mijnoverheid-color-smoke);
+  --mijnoverheid-tab-list-border-style: var(--mijnoverheid-border-style-solid);
+  --mijnoverheid-tab-list-border-width: 0 0 1px 0;
+  --mijnoverheid-tab-list-box-shadow: var(--mijnoverheid-box-shadow-md);
+  --mijnoverheid-tab-list-margin-block-start: 0;
+  --mijnoverheid-tab-list-margin-block-end: 4px;
+  --mijnoverheid-tab-list-padding-block-start: 4px;
+  --mijnoverheid-tab-list-padding-block-end: 0px;
+  --mijnoverheid-tab-list-padding-inline-start: 40px;
+  --mijnoverheid-tab-list-padding-inline-end: 40px;
+
+  /* Tab label */
+  --mijnoverheid-tab-label-font-family: var(--mijnoverheid-font-family-sans);
+  --mijnoverheid-tab-label-font-size: var(--mijnoverheid-body-font-size);
+  --mijnoverheid-tab-label-font-weight: var(--mijnoverheid-body-font-weight);
+  --mijnoverheid-tab-label-line-height: var(--mijnoverheid-body-line-height);
+  --mijnoverheid-tab-label-color: var(--mijnoverheid-color-text);
+  --mijnoverheid-tab-label-background-color: var(--mijnoverheid-color-white);
+  --mijnoverheid-tab-label-hover-background-color: var(--mijnoverheid-color-ghost);
+  --mijnoverheid-tab-label-active-background-color: var(--mijnoverheid-color-smoke);
+  --mijnoverheid-tab-label-focus-background-color: var(--mijnoverheid-color-ghost);
+  --mijnoverheid-tab-label-border-radius-top-left: 4px;
+  --mijnoverheid-tab-label-border-radius-top-right: 0;
+  --mijnoverheid-tab-label-border-radius-bottom-left: 4px;
+  --mijnoverheid-tab-label-border-radius-bottom-right: 0;
+  --mijnoverheid-tab-label-margin-block-start: 0;
+  --mijnoverheid-tab-label-margin-block-end: 0;
+  --mijnoverheid-tab-label-padding-block-start: 8px;
+  --mijnoverheid-tab-label-padding-block-end: 6px;
+  --mijnoverheid-tab-label-padding-inline-start: 12px;
+  --mijnoverheid-tab-label-padding-inline-end: 12px;
+
+  /* Tab label current */
+  --mijnoverheid-tab-label-current-font-weight: var(--mijnoverheid-font-weight-bold);
+
+  --mijnoverheid-tab-label-current-indicator-background-color: var(--mijnoverheid-color-brand-primary);
+  --mijnoverheid-tab-label-current-indicator-border-radius-top-left: 2px;
+  --mijnoverheid-tab-label-current-indicator-border-radius-top-right: 2px;
+  --mijnoverheid-tab-label-current-indicator-border-radius-border-left: 0;
+  --mijnoverheid-tab-label-current-indicator-border-radius-border-right: 0;
+  --mijnoverheid-tab-label-current-indicator-height: 4px;
+
+  /*--mijnoverheid-tab-current-background-color*/
+  /*--mijnoverheid-tab-current-hover-background-color*/
+  /*--mijnoverheid-tab-current-focus-background-color*/
+  /*--mijnoverheid-tab-current-active-background-color*/
+  /*--mijnoverheid-tab-current-background-color*/
+  /*--mijnoverheid-tab-current-color*/
+  /*--mijnoverheid-tab-current-font-size*/
+
+  /* Tab label disabled */
+
+  /*--mijnoverheid-tab-disabled-background-color*/
+  /*--mijnoverheid-tab-disabled-color*/
+  /*--mijnoverheid-tab-disabled-font-size*/
+  /*--mijnoverheid-tab-disabled-font-weight*/
+
+  /* Tab panel (panel containing active tab’s content) */
+
+  /*--mijnoverheid-tab-panel-background-color*/
+  /*--mijnoverheid-tab-panel-color*/
+  /*--mijnoverheid-tab-panel-font-size*/
+  /*--mijnoverheid-tab-panel-font-weight*/
+  /*--mijnoverheid-tab-panel-padding-block-start*/
+  /*--mijnoverheid-tab-panel-padding-block-end*/
+  /*--mijnoverheid-tab-panel-padding-inline-start*/
+  /*--mijnoverheid-tab-panel-padding-inline-end*/
+
+  /* Tab panels */
+}

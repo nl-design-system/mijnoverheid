@@ -1,0 +1,9 @@
+:root {
+  --mijnoverheid-font-family-sans: 'RoSans', sans-serif;
+
+  --mijnoverheid-font-style-regular: normal;
+  --mijnoverheid-font-style-italic: italic;
+
+  --mijnoverheid-font-weight-regular: 400;
+  --mijnoverheid-font-weight-bold: 700;
+}
