@@ -1,6 +1,10 @@
 import '@mijnoverheid/design-tokens/dist/index.css';
 
+import { addDecorator } from '@storybook/html';
+
 import { defineCustomElements } from '@mijnoverheid/web-components-stencil';
+
+addDecorator((story) => `<div class="mijnoverheid-theme">${story()}</div>`);
 
 defineCustomElements();
 
