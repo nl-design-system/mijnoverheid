@@ -3,11 +3,11 @@
   "author": "Community for NL Design System",
   "description": "React web components bundle based on the NL Design System architecture",
   "license": "EUPL-1.2",
-  "name": "@example/web-components-react",
+  "name": "@mijnoverheid/web-components-react",
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git"
+    "url": "git@github.com:nl-design-system/logius.git"
   },
   "sideEffects": false,
   "scripts": {
@@ -25,7 +25,7 @@
     "react-dom": "^16.7.0"
   },
   "devDependencies": {
-    "@example/web-components-stencil": "1.0.0-alpha.0",
+    "@mijnoverheid/web-components-stencil": "1.0.0-alpha.0",
     "@types/node": "15.12.5",
     "@types/react": "16.14.11",
     "@types/react-dom": "16.9.14",

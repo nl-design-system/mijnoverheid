@@ -1,7 +1,7 @@
 {
-  "example": {
+  "mijnoverheid": {
     "link": {
-      "color": { "value": "{example.color.blue.50.value}" }
+      "color": { "value": "{mijnoverheid.color.blue.50.value}" }
     }
   }
 }
