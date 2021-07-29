@@ -24,14 +24,11 @@
 }
 /* End of demo styles */
 
-
-
-
-.tab-set {
+.mijnoverheid-tab-set {
   overflow: hidden;
 }
 
-.tab-list {
+.mijnoverheid-tab-list {
   font-size: 0;
   overflow-x: auto;
 
@@ -49,7 +46,7 @@
   padding-right: var(--mijnoverheid-tab-list-padding-inline-end);
 }
 
-.tab-label {
+.mijnoverheid-tab-label {
   display: inline-block;
   position: relative;
   border-width: 0;
@@ -72,23 +69,23 @@
   border-bottom-right-radius: var(--mijnoverheid-tab-label-border-radius-bottom-right);
 }
 
-.tab-label--mobile {
+.mijnoverheid-tab-label--mobile {
   /* Theme styles */
   padding: 12px;
 }
 
-.tab-label--current {
+.mijnoverheid-tab-label--current {
   /* Theme styles */
   font-weight: var(--mijnoverheid-tab-label-current-font-weight);
 }
 
 /* Balk neemt ruimte in (4px) ipv ruimte toevoegen */
-.tab-label--current::after {
+.mijnoverheid-tab-label--current::after {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  content: '';
+  content: "";
 
   /* Theme styles */
   height: var(--mijnoverheid-tab-label-current-indicator-height);
@@ -98,61 +95,61 @@
   border-bottom-left-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-bottom-left);
   border-bottom-right-radius: var(--mijnoverheid-tab-label-current-indicator-border-radius-bottom-right);
 }
-.tab-label--current:hover::after,
-.tab-label--current.tab-label--hover::after {
+.mijnoverheid-tab-label--current:hover::after,
+.mijnoverheid-tab-label--current.mijnoverheid-tab-label--hover::after {
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-current-indicator-hover-background-color);
 }
-.tab-label--current:active::after,
-.tab-label--current.tab-label--active::after {
+.mijnoverheid-tab-label--current:active::after,
+.mijnoverheid-tab-label--current.mijnoverheid-tab-label--active::after {
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-current-indicator-active-background-color);
 }
-.tab-label--current:focus::after,
-.tab-label--current.tab-label--focus::after {
+.mijnoverheid-tab-label--current:focus::after,
+.mijnoverheid-tab-label--current.mijnoverheid-tab-label--focus::after {
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-current-indicator-focus-background-color);
 }
 
-.tab-label:hover,
-.tab-label--hover {
+.mijnoverheid-tab-label:hover,
+.mijnoverheid-tab-label--hover {
   cursor: pointer;
 
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-hover-background-color);
 }
-.tab-label:focus,
-.tab-label--focus {
+.mijnoverheid-tab-label:focus,
+.mijnoverheid-tab-label--focus {
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-focus-background-color);
 }
-.tab-label:active,
-.tab-label--active {
+.mijnoverheid-tab-label:active,
+.mijnoverheid-tab-label--active {
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-active-background-color);
 }
 
-.tab-label--disabled,
-.tab-label[disabled],
-.tab-label--disabled:hover,
-.tab-label[disabled]:hover,
-.tab-label--disabled:active,
-.tab-label[disabled]:active,
-.tab-label--disabled:focus,
-.tab-label[disabled]:focus {
+.mijnoverheid-tab-label--disabled,
+.mijnoverheid-tab-label[disabled],
+.mijnoverheid-tab-label--disabled:hover,
+.mijnoverheid-tab-label[disabled]:hover,
+.mijnoverheid-tab-label--disabled:active,
+.mijnoverheid-tab-label[disabled]:active,
+.mijnoverheid-tab-label--disabled:focus,
+.mijnoverheid-tab-label[disabled]:focus {
   cursor: default;
 
   /* Theme styles */
   background-color: var(--mijnoverheid-tab-label-background-color);
 }
-.tab-label--disabled::after,
-.tab-label[disabled]::after,
-.tab-label--disabled:hover::after,
-.tab-label[disabled]:hover::after,
-.tab-label--disabled:active::after,
-.tab-label[disabled]:active::after,
-.tab-label--disabled:focus::after,
-.tab-label[disabled]:focus::after {
+.mijnoverheid-tab-label--disabled::after,
+.mijnoverheid-tab-label[disabled]::after,
+.mijnoverheid-tab-label--disabled:hover::after,
+.mijnoverheid-tab-label[disabled]:hover::after,
+.mijnoverheid-tab-label--disabled:active::after,
+.mijnoverheid-tab-label[disabled]:active::after,
+.mijnoverheid-tab-label--disabled:focus::after,
+.mijnoverheid-tab-label[disabled]:focus::after {
   /* Theme styles */
   background-color: var(--mijnoverheid-color-dove-gray);
 }
