@@ -1,6 +1,6 @@
-import '@example/design-tokens/dist/index.css';
+import '@mijnoverheid/design-tokens/dist/index.css';
 
-import { defineCustomElements } from '@example/web-components-stencil';
+import { defineCustomElements } from '@mijnoverheid/web-components-stencil';
 
 defineCustomElements();
 
