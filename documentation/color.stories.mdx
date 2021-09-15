@@ -1,26 +1,16 @@
-import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+import { Meta } from "@storybook/addon-docs";
 import tokens from "@mijnoverheid/design-tokens/dist/index.json";
-import { cssVariable, styleDictionaryRef } from "./util";
+import { ColorSearch } from "./components/ColorSearch";
+import { ColorTable } from "./components/ColorTable";
 
 <Meta title="MijnOverheid/Colors" />
 
 # Colors
 
-<ColorPalette>
-  {Object.entries(tokens["mijnoverheid"]["color"])
-    .filter(([, { value }]) => typeof value === "string")
-    .map(([name, token]) => (
-      <ColorItem
-        key={name}
-        title={name}
-        subtitle={
-          <>
-            <code>{cssVariable(token)}</code>
-            <br />
-            <code>{styleDictionaryRef(token)}</code>
-          </>
-        }
-        colors={[token.value]}
-      />
-    ))}
-</ColorPalette>
+## Find a color
+
+<ColorSearch tokens={tokens["mijnoverheid"]["color"]}></ColorSearch>
+
+## Color palette
+
+<ColorTable tokens={tokens["mijnoverheid"]["color"]}></ColorTable>
