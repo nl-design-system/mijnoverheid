@@ -1,0 +1,26 @@
+import { Meta, ColorPalette, ColorItem } from "@storybook/addon-docs";
+import tokens from "@mijnoverheid/design-tokens/dist/index.json";
+import { cssVariable, styleDictionaryRef } from "./util";
+
+<Meta title="MijnOverheid/Colors" />
+
+# Colors
+
+<ColorPalette>
+  {Object.entries(tokens["mijnoverheid"]["color"])
+    .filter(([, { value }]) => typeof value === "string")
+    .map(([name, token]) => (
+      <ColorItem
+        key={name}
+        title={name}
+        subtitle={
+          <>
+            <code>{cssVariable(token)}</code>
+            <br />
+            <code>{styleDictionaryRef(token)}</code>
+          </>
+        }
+        colors={[token.value]}
+      />
+    ))}
+</ColorPalette>
