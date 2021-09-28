@@ -1,12 +1,8 @@
-# Tabs
+# Content guidelines
 
-## Content guidelines
+Tabs can be used to reflect a categorisation of information, where one category can be viewed at the same time.
 
-### TabLabel content
+Tabs are not optimal for browsing or exploring information. For that purpose better choose one of the alternatives.
 
-Should contain short text which summarizes and/or categorizes the content of the corresponding TabPanel content.
-Example: 'Personal Information'
+Tabs should only be used when the user is likely to know or predict the names/content of the tabs (like in frequently used functions or admin environments)
 
-### TabPanel content
-
-Should contain the content summarized by the TabLabel. Example: Information and/or interactions specific for the category described by the TabLabel.

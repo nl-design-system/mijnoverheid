@@ -1,4 +1,4 @@
-:root {
+.mijnoverheid-theme {
   /* Tab set */
 
   /* Tab list */
@@ -25,8 +25,8 @@
   --mijnoverheid-tab-label-active-background-color: var(--mijnoverheid-color-smoke);
   --mijnoverheid-tab-label-focus-background-color: var(--mijnoverheid-color-ghost);
   --mijnoverheid-tab-label-border-radius-top-left: 4px;
-  --mijnoverheid-tab-label-border-radius-top-right: 0;
-  --mijnoverheid-tab-label-border-radius-bottom-left: 4px;
+  --mijnoverheid-tab-label-border-radius-top-right: 4px;
+  --mijnoverheid-tab-label-border-radius-bottom-left: 0;
   --mijnoverheid-tab-label-border-radius-bottom-right: 0;
   --mijnoverheid-tab-label-margin-block-start: 0;
   --mijnoverheid-tab-label-margin-block-end: 0;
@@ -37,9 +37,9 @@
 
   /* Tab label current */
   --mijnoverheid-tab-label-current-font-weight: var(--mijnoverheid-font-weight-bold);
-  --mijnoverheid-tab-label-current-indicator-hover-background-color: var(--mijnoverheid-font-weight-bold);
-  --mijnoverheid-tab-label-current-indicator-active-background-color: var(--mijnoverheid-font-weight-bold);
-  --mijnoverheid-tab-label-current-indicator-focus-background-color: var(--mijnoverheid-font-weight-bold);
+  --mijnoverheid-tab-label-current-indicator-hover-background-color: var(--mijnoverheid-color-brand-primary);
+  --mijnoverheid-tab-label-current-indicator-active-background-color: var(--mijnoverheid-color-brand-primary);
+  --mijnoverheid-tab-label-current-indicator-focus-background-color: var(--mijnoverheid-color-brand-primary);
   --mijnoverheid-tab-label-current-indicator-background-color: var(--mijnoverheid-color-brand-primary);
   --mijnoverheid-tab-label-current-indicator-border-radius-top-left: 2px;
   --mijnoverheid-tab-label-current-indicator-border-radius-top-right: 2px;

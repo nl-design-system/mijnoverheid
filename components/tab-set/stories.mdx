@@ -13,7 +13,7 @@ import contentGuidelines from "./docs/content-guidelines.md";
 import accessibilityGuidelines from "./docs/accessibility-guidelines.md";
 
 export const Template = ({ label }) =>
-  `<div>
+  `<div class="bg-grey">
       <h2>Tab labels</h2>
       <table class="demo-table">
         <thead>
@@ -79,7 +79,7 @@ export const Template = ({ label }) =>
   </div>`;
 
 <Meta
-  title="Components/TabList"
+  title="CSS Component/TabList"
   argTypes={{
     label: {
       description: "Set the content of the tab item",
@@ -96,7 +96,7 @@ export const Template = ({ label }) =>
 />
 
 <Canvas>
-  <Story name="TabList" args={{ label: "Demo tab item" }}>
+  <Story name="TabList" args={{ label: "Tab text" }}>
     {Template.bind({})}
   </Story>
 </Canvas>
