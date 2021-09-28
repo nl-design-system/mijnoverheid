@@ -1,0 +1,17 @@
+{
+  "mijnoverheid": {
+    "typography": {
+      "sans-serif": {
+        "font-family": "'RoSans', sans-serif"
+      },
+      "font-style": {
+        "regular": { "value": "normal" },
+        "italic": { "value": "italic" }
+      },
+      "font-weight": {
+        "regular": { "value": 400 },
+        "bold": { "value": 700 }
+      }
+    }
+  }
+}
