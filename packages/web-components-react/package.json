@@ -26,12 +26,12 @@
   },
   "devDependencies": {
     "@mijnoverheid/web-components-stencil": "1.0.0-alpha.0",
-    "@types/node": "15.12.5",
+    "@types/node": "15.14.9",
     "@types/react": "16.14.20",
     "@types/react-dom": "16.9.14",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "rimraf": "3.0.2",
-    "typescript": "4.1.6"
+    "typescript": "4.4.4"
   }
 }
