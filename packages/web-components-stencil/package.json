@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/logius.git"
+    "url": "git@github.com:nl-design-system/mijnoverheid.git"
   },
   "scripts": {
     "prebuild": "npm run clean",
