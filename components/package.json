@@ -6,6 +6,6 @@
   "name": "@mijnoverheid/components",
   "private": true,
   "devDependencies": {
-    "clsx": "1.1.1"
+    "clsx": "1.2.1"
   }
 }
